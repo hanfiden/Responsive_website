@@ -86,7 +86,7 @@ header nav {
 
 header .color-animation{
   animation: color-change 6s infinite;
-  font-weight:  bold;
+  font-weight: bold;
 }
 
 @keyframes color-change {
@@ -116,7 +116,7 @@ header .color-animation{
  }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
  header nav li a{
  	font-size: 7px;
  }
@@ -146,7 +146,20 @@ header .color-animation{
 	text-align: center;
 }
 
+@media screen and (max-width: 650px) {
+	#intro h1{
+		font-size: 40px;
+	}
+	#intro p{
+		font-size: 15px;
+	}
+}
 
+@media screen and (max-width: 400px) {
+	#intro {
+		min-height: 600px;
+	}	
+}
 /********************** Home ***************************/
 
 #home h1{
