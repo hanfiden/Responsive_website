@@ -96,15 +96,18 @@
 	<section id="contact">
 		<div class="container-contact">
 			<h1>Contact me</h1>
-			<form method="post" action="contactform.php" class="contact-form">		
+			<form method="POST" action="contactform.php" class="contact-form">		
 				<div class="row">
-					<input type="email" placeholder="your_email@gmail.com" name="email">
+					<input type="email" placeholder="your_email@gmail.com" name="email" required>
 				</div>
 				<div class="row">
-					<input type="text" placeholder="Enter your name.." name="name">
+					<input type="text" placeholder="Enter your name.." name="name" required>
 				</div>
 				<div class="row">
-					<textarea placeholder="Enter your message.." name="message"></textarea>
+					<input type="text" placeholder="Enter your subject.." name="subject" required>
+				</div>
+				<div class="row">
+					<textarea placeholder="Enter your message.." name="message" required></textarea>
 				</div>			
 				<div class="row">
 					<button type="submit" class="button_1" name="submit">Submit</button>
