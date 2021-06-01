@@ -82,7 +82,7 @@ header .color-animation{
 /********************** Home ***************************/
 
 #intro {
-	min-height: 400px;
+	min-height: 500px;
 	background: url('../img/galaxy.jpg') no-repeat center center fixed;
 	background-size: cover;
 	text-align: center;
@@ -90,24 +90,73 @@ header .color-animation{
 }
 
 #intro h1{
-	margin-top: 100px;
+	margin-top: 80px;
 	font-size: 50px;
 }
 
 #intro p{
 	font-size: 20px;
+	text-align: center;
 }
 
 
 /********************** Contact ***************************/
 
+#contact {
+	box-sizing: border-box;
+	text-align: center;
+}
 
+#contact h1{
+	color:  white;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
 
+.container-contact {
+	border-radius: 5px;
+  	background: url('../img/contact.png') no-repeat center center fixed;
+	background-size: cover;
+  	padding: 20px 20px 20px 20px;
+  	min-height: 500px;
+}
 
+input[type=text], [type=email], textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-top: 6px
+}
 
+textarea {
+	height: 150px;
+}
 
+button {
+  background-color: #4CAF90;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 40px;
+}
 
+button:hover {
+  background-color: #45a080;
+}
 
+@media screen and (max-width: 800px) {
+  	button {
+    width: 50%;
+  }
+
+ input[type=text], [type=email], textarea {
+  width: 80%;
+	}
+}
 
 
 
