@@ -1,3 +1,7 @@
+html{
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: Georgia, serif;
 	font-size:  15px;
@@ -74,11 +78,6 @@ header .color-animation{
   85% {color: white;}
 }
 
-.current{
-	color: #e8491d;
-	font-weight: bold;
-}
-
 /********************** Intro ***************************/
 
 #intro {
@@ -153,8 +152,66 @@ header .color-animation{
 	font-size: 30px;
 	text-align: center;
 	}
+
+	#home p{
+	width: 80%;
+	}
 }
 
+
+/********************** Facts ***************************/
+
+#facts {
+	padding: 20px;
+	text-align: center;
+	background-color: #f2f2f2;
+}
+
+#facts h1{
+	text-align: center;
+	font-size: 40px;
+}
+
+@media screen and (max-width: 800px) {
+	#facts h1{
+		font-size: 30px;
+	}
+}
+
+.col-text {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.col-img {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.col-img img{
+  width: 300px;
+  resize: vertical;
+  padding: 12px;
+}
+
+
+/*CLEAR ROW**/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-text, .col-img {
+    width: 100%;
+    margin-top: 0;
+  }
+
+}
 
 /********************** Contact ***************************/
 
@@ -191,7 +248,7 @@ textarea {
 	height: 150px;
 }
 
-button {
+.button_1 {
   background-color: #4CAF90;
   color: white;
   padding: 12px 20px;
@@ -201,12 +258,12 @@ button {
   margin-top: 40px;
 }
 
-button:hover {
+.button_1:hover {
   background-color: #45a080;
 }
 
 @media screen and (max-width: 800px) {
-  	button {
+  	.button_1 {
     width: 50%;
   }
 

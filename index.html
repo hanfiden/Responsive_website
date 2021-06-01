@@ -6,7 +6,7 @@
 	<meta name="description" content="Test Responsive Website">
 	<meta name="keywords" content="web design, responsive project, test">
 	<meta name="author" content="Han Fiden">
-	<title>Responsive Project | Welcome</title>
+	<title>Responsive Project</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
@@ -17,8 +17,8 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#home" class="current">Home</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="#home">Planets</a></li>
+					<li><a href="#facts">Some facts</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -37,19 +37,58 @@
 			<h1>Planets</h1>
 			<p>The solar system is a bizarre place with its alien planets, mysterious moons and strange phenomena that are so out-of-this-world they elude explanation.</p>
 			<div class="box">
-				<img src="./img/mars.png">
+				<a href="#mars"><img src="./img/mars.png" alt="Mars"></a>
 				<h3>Mars</h3>
 				<p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury.</p>
 			</div>
 			<div class="box">
-				<img src="./img/earth.png">
+				<a href="#earth"><img src="./img/earth.png" alt="Earth"></a>
 				<h3>Earth</h3>
 				<p>Earth is the third planet from the Sun and the only astronomical object known to harbor and support life.</p>
 			</div>
 			<div class="box">
-				<img src="./img/saturn.png">
+				<a href="#saturn"><img src="./img/saturn.png" alt="Saturn"></a>
 				<h3>Saturn</h3>
 				<p>Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="facts">
+		<div class="container">
+			<h1>Some Facts</h1>
+
+			<div class="facts-row" id="mars">
+				<div class="col-img">
+					<img src="./img/cute-rover.png" alt="Mars Facts">
+				</div>
+				<div class="col-text">
+					<h3>Mars</h3>
+					<p>Mars is the fourth planet in increasing order of distance from the Sun and the second in increasing order of size and mass. Its distance from the Sun is between 206.6 to 249.2 million kilometers, with an orbital period of 669.58 Martian days (686.71 days or 1.88 Earth years).</p>
+					<p>The southern hemisphere of Mars, with its very ancient soil, is covered with numerous craters dug by meteorites. In the north of the planet, on the contrary, the surface has been rejuvenated by the lava flows from immense volcanoes which are now extinct. Several of these volcanoes, such as the largest in the solar system, Olympus Mons, exceed 20 km in altitude.</p>
+				</div>
+			</div>
+
+			<div class="facts-row" id="earth">
+				<div class="col-img">
+					<img src="./img/cute-earth.png" alt="Earth facts">
+				</div>
+				<div class="col-text">
+					<h3>Earth</h3>
+					<p>Earth is the third planet in order of distance from the Sun and the fifth largest in the Solar System in terms of both mass and diameter. Moreover, it is the only celestial object known to harbor life. It orbits the Sun in 365,256 solar days - a sidereal year - and rotates on itself relative to the Sun in 23 h 56 min 4 s - a sidereal day - a little less than its 24 h solar day due to of this movement around the Soleila. The axis of rotation of the Earth has an inclination of 23 °, which causes the appearance of the seasons.</p>
+					<p>Depending on the altitude, several regions of different density and temperature can be distinguished in the atmosphere: the troposphere, the stratosphere, the mesosphere, the thermosphere and the exosphere.</p>
+				</div>
+			</div>
+
+			<div class="facts-row" id="saturn">
+				<div class="col-img">
+					<img src="./img/cute-saturn.png" alt="Saturn Facts">
+				</div>
+				<div class="col-text">
+					<h3>Saturn</h3>
+					<p>Saturn is the sixth planet in the Solar System in order of distance from the Sun, and the second largest in size and mass after Jupiter, which is like it a gas giant planet. Its average radius of 58,232 km is about nine and a half times that of the Earth, and its mass of 568.46 × 1024 kg is 95 times greater. Orbiting on average about 1.4 billion kilometers from the Sun (9.5 astronomical units), its period of revolution is just under 30 years while its period of rotation is estimated at 10 h 33 min.</p>
+					<p>More than twenty moons revolve around Saturn. The largest, Titan, is very rocky. This body appears, like an eighth or ninth magnitude star, and it was first discovered in 1655.</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -57,7 +96,7 @@
 	<section id="contact">
 		<div class="container-contact">
 			<h1>Contact me</h1>
-			<form>		
+			<form method="post" action="">		
 				<div class="row">
 					<input type="email" placeholder="your_email@gmail.com" name="email">
 				</div>
@@ -77,5 +116,6 @@
 	<footer>
 		<p>Responsive website, Copyright &copy; 2021 Han Fiden</p>
 	</footer>
+
 </body>
 </html>
